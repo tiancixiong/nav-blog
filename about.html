@@ -99,6 +99,25 @@
                                 </div>-->
                             </div>
                         </div>
+						<!-- 评论插件 -->
+						<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+						<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+						<div id="gitalk-container"></div>
+						<script>
+							// 截取字符串
+							var title = location.pathname.substr(0, 50);
+							var gitalk = new Gitalk({
+							  clientID: 'e61fa8d9e5b5b2b51607', // GitHub Application Client ID
+							  clientSecret: '5ddc4f236d1fea11fb4c31fd9319f2bbf29cbd65', // GitHub Application Client Secret
+							  repo: 'gitalk-comment-nav', // 存放评论的仓库
+							  owner: 'tiancixiong', // 仓库的创建者，
+							  admin: ['tiancixiong'], // 如果仓库有多个人可以操作，那么在这里以数组形式写出
+							  id: title, // 用于标记评论是哪个页面的，确保唯一，并且长度小于50
+							  distractionFreeMode: false
+							})
+
+							gitalk.render('gitalk-container'); // 渲染Gitalk评论组件
+						</script>
                     </div>
                 </div>
             </div>

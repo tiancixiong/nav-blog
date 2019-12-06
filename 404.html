@@ -1,207 +1,123 @@
-<!DOCTYPE html>
-<html lang="zh">
+﻿<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>webstack - 404</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
-    <link rel="shortcut icon" href="./assets/images/favicon.png">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77253689-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-77253689-1');
-    </script>
+    <title>出错啦 | 天赐</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./assets/images/favicon.png">
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!-- Styles -->
     <style>
-    html,
-    body {
-        width: 100%;
-        height: 100%
-    }
-    
-    a,
-    a img,
-    a:before,
-    a:after {
-        text-decoration: none;
-        transition-duration: .25s
-    }
-    
-    section {
-        display: block
-    }
-    
-    body {
-        line-height: 1
-    }
-    
-    #about {
-        width: 40%;
-        position: absolute;
-        top: 40%;
-        left: 10%;
-        z-index: 20;
-        transform: translate(0, -50%);
-    }
-    
-    #about h1 {
-        margin: 30px;
-    }
-    
-    #about p {
-        margin: 30px;
-    }
-    
-    #about img {
-        margin-left: 30px;
-    }
-    
-    #about .social {
-        float: left;
-        margin: 30px;
-    }
-    
-    #about .copyright {
-        width: 100%;
-        float: left;
-        margin-bottom: 0px;
-    }
-    
-    @media (max-width: 768px) {
-        #about {
-            width: 100%;
-            left: 0px;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.85);
-        }
-        #about h1 {
-            margin: 30px;
-        }
-        #about p {
-            margin: 30px;
-        }
-        #about .social {
-            margin: 30px;
-        }
-        #about .copyright {
-            width: 100%;
-            float: left;
-            margin-bottom: 0px;
-        }
-    }
-    
-    @media (max-width: 580px) {
-        #about {
-            width: 100%;
-            left: 0px;
-            height: 100%;
-            background-color: rgba(255, 255, 255, 0.85);
-        }
-        #about h1 {
-            margin: 30px;
-        }
-        #about p {
-            margin: 30px;
-            margin-bottom: 0px
-        }
-        #about .social {
-            margin: 30px;
-            margin-bottom: 0px
-        }
-        #about .copyright {
-            width: 100%;
-            float: left;
-            margin-bottom: 0px;
-        }
-    }
-    
-    .animated {
-        animation-duration: 1s;
-        animation-fill-mode: both
-    }
-    
-    .bounce-in {
-        animation-name: bounce-in
-    }
-    
-    @keyframes bounce-in {
-        from,
-        60%,
-        75%,
-        90%,
-        to {
-            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1)
-        }
-        0% {
-            opacity: 0;
-            transform: translate3d(-3000px, -50%, 0)
-        }
-        60% {
-            opacity: 1;
-            transform: translate3d(25px, -50%, 0)
-        }
-        75% {
-            transform: translate3d(-10px, -50%, 0)
-        }
-        90% {
-            transform: translate3d(5px, -50%, 0)
-        }
-        to {
-            transform: translate3d(0, -50%)
-        }
-    }
-    
-    body {
-        font-family: "Roboto", sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 1.75;
-        color: rgba(0, 0, 0, 0.65)
-    }
-    
-    h1 {
-        font-family: "Merriweather", sans-serif;
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 1.25;
-        color: rgba(0, 0, 0, 0.85);
-        margin-bottom: 25px
-    }
-    
-    a {
-        color: rgba(3, 3, 3, 0.85);
-        font-weight: 600;
-    }
-    
-    @media (max-width: 580px) {
+        html,
         body {
-            font-size: 14px
+            background-color: #fff;
+            color: #636b6f;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 100;
+            height: 100vh;
+            margin: 0;
         }
-        h1 {
-            font-size: 42px;
-            line-height: 1.45
+
+
+        .flex-center {
+            align-items: center;
+            display: flex;
+            justify-content: center;
         }
-    }
-    
-    .bg-align {
-        margin-top: 50%;
-    }
+
+        .position-ref {
+            position: relative;
+        }
+
+        .code {
+            border-right: 2px solid;
+            font-size: 26px;
+            padding: 0 15px 0 15px;
+            text-align: center;
+        }
+
+        .message {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        a {
+            background-color: transparent;
+            text-decoration: none;
+            cursor: url(https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur), auto;
+        }
+
+        .chinese-font {
+            font-family: 'Merriweather Sans', Helvetica, Tahoma, Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', 'WenQuanYi Micro Hei', sans-serif;
+        }
+
+
+        .error-404 {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .error-img {
+            margin: 20px 0 0;
+        }
+
+        .error-msg {
+            margin: 20px 0;
+        }
+
+        .error-button {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .error-button.back {
+            text-align: center;
+        }
+
+        .error-button.back a {
+            width: 50%;
+            padding: 10px 30px;
+            margin: 0 10px;
+            border: 1px solid #d6d6d6;
+            color: #d6d6d6;
+            -webkit-border-radius: 50px;
+            -moz-border-radius: 50px;
+            border-radius: 50px;
+        }
+
+        #gohome {
+            background: #d6d6d6;
+            color: #fff;
+            margin-top: 8px;
+        }
     </style>
 </head>
 
 <body>
-    <section id="about" class="animated bounce-in">
-        <div class="bg-align">
-            <h1>404</h1>
-            <p>Oops! It looks like you're lost...</p>
-            <p>The Page you're looking for doesn't exist or another error occurred.</p>
-            <p><a href="http://webstack.cc">👉  webstack.cc</a></p>
+    <section class="error-404 not-found">
+        <div class="error-img flex-center">
+            <img src="https://cdn.jsdelivr.net/gh/tiancixiong/cdn@1.2/img/other/404.webp">
+        </div>
+        <div class="error-msg flex-center chinese-font position-ref">
+            <div class="code">
+                404 </div>
+
+            <div class="message" style="padding: 10px;">
+                Page not found </div>
+        </div>
+
+        <div class="error-button back">
+            <a id="golast" href="javascript:history.go(-1);">返回上一页</a>
+            <a id="gohome" href="https://nav.xiongtianci.com/">返回主页</a>
         </div>
     </section>
 </body>

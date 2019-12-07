@@ -134,8 +134,31 @@
             <footer class="main-footer sticky footer-type-1 fixed">
                 <div class="footer-inner">
                     <div class="footer-text">
-                        &copy; 2019
-                        <a href="https://www.xiongtianci.com" target="_blank"><strong>天赐</strong></a>
+                        &copy; 2019 天赐の收藏夹 |
+                        <a href="https://www.xiongtianci.com" target="_blank"><strong>博主</strong></a> |
+                        <a href="https://git.dev.tencent.com/xiongtianci/nav-blog.git" target="_blank"><strong>源码</strong></a>
+                        <!--计时功能代码-->
+                        <script language="javascript">
+                        function tick() {
+                            var years,days,hours, minutes, seconds;
+                            var openday = new Date('2019/12/5 12:10'); //这里填写建站时间
+                            var today = new Date(); //获取系统当前时间
+                            var total = (today.getTime()-openday.getTime())/1000;
+                            days=Math.floor(total/86400);
+                            total=total-days*86400;
+                            hours=Math.floor(total/3600);
+                            total=total-hours*3600;
+                            minutes=Math.floor(total/60);
+                            total=total-minutes*60;
+                            seconds=Math.floor(total);
+                            timeString = "已在风雨中运行 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
+                            document.getElementById("clock").innerHTML = timeString;
+                            window.setTimeout("tick();", 1000);
+                        }
+                        window.onload = tick;
+                        </script>
+                        &nbsp;&nbsp;&nbsp;<span id="clock" style="color: #b9b9b9;">本站已不间断:103天17时36分55秒</span>
+                        <!--END 计时功能代码-->
                     </div>
                     <div class="go-up">
                         <a href="#" rel="go-top">

@@ -4452,7 +4452,7 @@
                     </div>
                 </div>
                 <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.shi-ci.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中华诗词">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.shi-ci.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="诗词">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="https://cdn.jsdelivr.net/gh/tiancixiong/nav-blog-cdn@1.0/assets/images/logos/shi-ci.com.ico" width="40">
@@ -4467,16 +4467,46 @@
                     </div>
                 </div>
 				<div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://shici.store/huajianji/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="中华诗词">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://shici.store/huajianji/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="诗词">
                         <div class="xe-comment-entry">
                             <a class="xe-user-img">
                                 <img src="https://cdn.jsdelivr.net/gh/tiancixiong/nav-blog-cdn@1.0/assets/images/logos/shici.store.png" width="40">
                             </a>
                             <div class="xe-comment">
                                 <span class="xe-user-name overflowClip_1">
-                                    <strong>中华诗词</strong>
+                                    <strong>中文诗歌</strong>
                                 </span>
                                 <p class="overflowClip_2"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.allhistory.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="历史">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="https://cdn.jsdelivr.net/gh/tiancixiong/nav-blog-cdn@1.0/assets/images/logos/allhistory.ico" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <span class="xe-user-name overflowClip_1">
+                                    <strong>全历史</strong>
+                                </span>
+                                <p class="overflowClip_2">带你换个角度看世界</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.lishichelun.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="历史">
+                        <div class="xe-comment-entry">
+                            <a class="xe-user-img">
+                                <img src="./assets/images/logos/www.lishichelun.com.ico" width="40">
+                            </a>
+                            <div class="xe-comment">
+                                <span class="xe-user-name overflowClip_1">
+                                    <strong>历史车轮</strong>
+                                </span>
+                                <p class="overflowClip_2">历史数据可视化</p>
                             </div>
                         </div>
                     </div>
@@ -4658,36 +4688,6 @@
             <!-- 全新发现 -->
             <h4 class="text-gray"><i class="linecons-tag" style="margin-right: 7px;" id="全新发现"></i>全新发现</h4>
             <div class="row">
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.allhistory.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="全历史">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img src="https://cdn.jsdelivr.net/gh/tiancixiong/nav-blog-cdn@1.0/assets/images/logos/allhistory.ico" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <span class="xe-user-name overflowClip_1">
-                                    <strong>全历史</strong>
-                                </span>
-                                <p class="overflowClip_2">带你换个角度看世界</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3">
-                    <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://www.lishichelun.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
-                        <div class="xe-comment-entry">
-                            <a class="xe-user-img">
-                                <img src="./assets/images/logos/www.lishichelun.com.ico" width="40">
-                            </a>
-                            <div class="xe-comment">
-                                <span class="xe-user-name overflowClip_1">
-                                    <strong>历史车轮</strong>
-                                </span>
-                                <p class="overflowClip_2">历史数据可视化</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 				<div class="col-sm-3">
                     <div class="xe-widget xe-conversations box2 label-info" onclick="window.open('https://iknowwhatyoudownload.com/', '_blank')" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="">
                         <div class="xe-comment-entry">
@@ -6299,6 +6299,8 @@
                             var openday = new Date('2019/12/5 12:10'); //这里填写建站时间
                             var today = new Date(); //获取系统当前时间
                             var total = (today.getTime()-openday.getTime())/1000;
+                            years=Math.floor(total/31536000);
+                            total=total-years*31536000;
                             days=Math.floor(total/86400);
                             total=total-days*86400;
                             hours=Math.floor(total/3600);
@@ -6306,6 +6308,7 @@
                             minutes=Math.floor(total/60);
                             total=total-minutes*60;
                             seconds=Math.floor(total);
+                            //timeString = "已在风雨中运行 "+years+" 年 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
                             timeString = "已在风雨中运行 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
                             document.getElementById("clock").innerHTML = timeString;
                             window.setTimeout("tick();", 1000);

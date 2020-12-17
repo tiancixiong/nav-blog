@@ -6265,8 +6265,8 @@
                             minutes=Math.floor(total/60);
                             total=total-minutes*60;
                             seconds=Math.floor(total);
-                            //timeString = "已在风雨中运行 "+years+" 年 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
-                            timeString = "已在风雨中运行 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
+                            timeString = "已在风雨中运行 "+years+" 年 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
+                            //timeString = "已在风雨中运行 "+days+" 天 "+hours+" 小时 "+minutes+" 分 "+seconds+" 秒";
                             document.getElementById("clock").innerHTML = timeString;
                             window.setTimeout("tick();", 1000);
                         }
